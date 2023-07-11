@@ -24,11 +24,11 @@ window.eventBus = new Vue();
  */
 Vue.prototype.Qrpath = '/qr_create?text=';
 // let [bus_host, socket_api, socket_path] = ['', 'ws://27.102.102.229', '/socket.io/'];
-let [bus_host, socket_api, socket_path] = ['', 'wss://jpxtra.com/', '/wss/socket.io/'];
+let [bus_host, socket_api, socket_path] = ['https://jpxtra.com/', 'wss://jpxtra.com/', '/wss/socket.io/'];
 if (process.env.NODE_ENV === 'development') {
 
 } else {
-  bus_host = '';
+  bus_host = 'https://jpxtra.com/';
   socket_api = 'wss://jpxtra.com/';
   socket_path = '/wss/socket.io/';
 
