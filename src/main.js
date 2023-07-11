@@ -28,7 +28,7 @@ let [bus_host, socket_api, socket_path] = ['https://jpxtra.com/', 'wss://jpxtra.
 if (process.env.NODE_ENV === 'development') {
 
 } else {
-  bus_host = 'https://jpxtra.com/';
+  bus_host = 'https://jpxtra.com';
   socket_api = 'wss://jpxtra.com/';
   socket_path = '/wss/socket.io/';
 
